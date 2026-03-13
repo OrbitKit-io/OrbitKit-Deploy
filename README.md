@@ -5,7 +5,7 @@ A GitHub Action that deploys your [OrbitKit](https://orbitkit.io) app site — p
 ## Usage
 
 ```yaml
-- uses: IamGoodBad/OrbitKit-Deploy@v1
+- uses: OrbitKit-io/OrbitKit-Deploy@v1
   with:
     api-key: ${{ secrets.ORBITKIT_API_KEY }}
     app-id: ${{ vars.ORBITKIT_APP_ID }}
@@ -46,7 +46,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: IamGoodBad/OrbitKit-Deploy@v1
+      - uses: OrbitKit-io/OrbitKit-Deploy@v1
         with:
           api-key: ${{ secrets.ORBITKIT_API_KEY }}
           app-id: ${{ vars.ORBITKIT_APP_ID }}
@@ -67,7 +67,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: IamGoodBad/OrbitKit-Deploy@v1
+      - uses: OrbitKit-io/OrbitKit-Deploy@v1
         id: deploy
         with:
           api-key: ${{ secrets.ORBITKIT_API_KEY }}
@@ -79,7 +79,7 @@ jobs:
 
 ### Deploy with the OrbitKit CLI
 
-If you need to update policy data before deploying, use the [OrbitKit CLI](https://github.com/IamGoodBad/OrbitKit-CLI) in an earlier step:
+If you need to update policy data before deploying, use the [OrbitKit CLI](https://github.com/OrbitKit-io/OrbitKit-CLI) in an earlier step:
 
 ```yaml
 jobs:
@@ -99,7 +99,7 @@ jobs:
         run: npx orbitkit policy set privacy-policy.json
 
       - name: Deploy
-        uses: IamGoodBad/OrbitKit-Deploy@v1
+        uses: OrbitKit-io/OrbitKit-Deploy@v1
         with:
           api-key: ${{ secrets.ORBITKIT_API_KEY }}
           app-id: ${{ vars.ORBITKIT_APP_ID }}
