@@ -1,5 +1,8 @@
 # OrbitKit Deploy
 
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache_2.0-blue.svg)](LICENSE)
+[![GitHub release](https://img.shields.io/github/v/release/OrbitKit-io/OrbitKit-Deploy?color=blue)](https://github.com/OrbitKit-io/OrbitKit-Deploy/releases)
+
 A GitHub Action that deploys your [OrbitKit](https://orbitkit.io) app site — privacy policies, support pages, data deletion pages, app site association files, and more — straight from your CI/CD pipeline.
 
 ## Usage
