@@ -113,4 +113,4 @@ jobs:
 
 ## License
 
-Copyright OrbitKit. All rights reserved.
+[Apache License 2.0](LICENSE) © OrbitKit, Inc.
